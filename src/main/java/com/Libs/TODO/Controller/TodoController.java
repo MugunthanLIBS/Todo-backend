@@ -21,6 +21,13 @@ public class TodoController {
 	@Autowired
 	TodoService todoservice;
 	
+	@GetMapping("/")
+	public String get()
+	{
+		return  "Hello Baby";	
+	}
+	
+	
 	@PostMapping("/add")
 	public String saveData(@RequestBody Todo todo)
 	{
