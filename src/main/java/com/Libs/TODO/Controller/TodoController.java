@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.Libs.TODO.Entity.Todo;
 import com.Libs.TODO.Service.TodoService;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "*")
 @RestController			//Response+Controller
 public class TodoController {
 	@Autowired
